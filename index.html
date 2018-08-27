@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Landing</title>
+</head>
+
+<body>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <header id="header">
+        <img src="gg.png" alt="something" id="header-img" style="display:none;">
+        <nav class="navbar navbar-expand-sm bg-light" id="nav-bar">
+            <ul id="nav-list">
+                <li class="nav-link"><a href="#video1">Videos</a></li>
+                <li class="nav-link"><a href="#ad-cont">Hotels</a></li>
+                <li class="nav-link"><a href="#ad-cont">Deals</a></li>
+                <li class="nav-link"><a href="#ad-cont">Car Rental</a></li>
+            </ul>
+            <div id="header-img1"><img src="http://hockeyhumanitarian.org/wp-content/themes/hha/assets/img/Entypo/aircraft-take-off.svg" alt="plane logo" id="logo">WE FLY</div>
+        </nav>
+        <div class="jumbotron" id="jumbotron">
+            <form action="input" name="search" id="form" action="mailto:https://www.freecodecamp.com/email-submit">
+                <!-- CLASS SELECTION -->
+                <div id="direction" class="radio-cont">
+                    One Way
+                    <input type="radio" name="direction" class="radio-select" id="oneway-radio" onclick="click()"> Return
+                    <input type="radio" name="direction" class="radio-select" id="return-radio">
+                </div>
+                <!-- LOCATION & DATE SELECTION -->
+                <input type="text" placeholder="From">
+                <input type="text" placeholder="To">
+                <label for="date">Select Date</label>
+                <label for="">LEAVE</label>
+                <input type="date" id="leave">
+                <label for="">RETURN</label>
+                <input type="date" id="return">
+                <!-- CLASS SELECTION -->
+                <div id="class" class="radio-cont">
+                    Economy
+                    <input type="radio" value="Economy" name="class" class="radio-select"> Business
+                    <input type="radio" value="Business" name="class" class="radio-select"> First Class
+                    <input type="radio" value="First Class" name="class" class="radio-select">
+                </div>
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
+                <!--SEARCH BUTTON -->
+                <input id="submit" type="submit" value="FIND FLIGHTS" class="btn"></input>
+            </form>
+        </div>
+    </header>
+    <div id="ad-cont">
+        <div class="grid-container">
+            <div class="w">
+                <h2>FLIGHTS</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium , totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+            <div class="e">
+                <h2>HOTELS</h2>
+                <p>Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi c</p>
+            </div>
+            <div class="r">
+                <h2>DEALS</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore totam rem aperiam,</p>
+            </div>
+            <div class="x">
+                <h2>RENTAL</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore </p>
+            </div>
+        </div>
+    </div>
+    <div id="video1">
+        <div class="vid">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FlzI8gKFhZc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video"></iframe>
+        </div>
+        <div class="vid">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/I712YXdJ6_0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="vid">
+            <iframe width="100%" height="33%" src="https://www.youtube.com/embed/z_Zxak7LKbA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+    <footer>
+        <p id="footerP">Hello...</p>
+    </footer>
+</body>
+
+</html>
